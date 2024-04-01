@@ -1,12 +1,36 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, ScrollView, Image, FlatList } from 'react-native';
 import HelloWorld from './components/HelloWorld';
+import Cat from './components/Cat';
+import State from './components/state';
+import PizzaTranslator from './components/PizzaTranslator';
+import FlatListBasic from './components/FlatListBasic';
+import SectionListBasic from './components/SectionListBasic';
+import FetchExample from './components/FetchExample';
+const logo = {
+  uri: 'https://reactnative.dev/img/tiny_logo.png',
+  width: 32,
+  height: 32,
+};
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ScrollView style={{paddingTop:24}}>
+      <Image source={logo}/>
+      <FetchExample/>
+      <Image source={logo}/>
+      <SectionListBasic/>
+      <Image source={logo}/>
+      <FlatListBasic/>
+      <Image source={logo}/>
+      <PizzaTranslator/>
+      <State name="Run Tum Tugger"/>
+      <Image source={logo}/>
+      <Cat name="Maru" num="1"/>
+      <Cat name="Run Tum Tugger" num="2"/>
+      <Image source={logo}/>
       <HelloWorld/>
-    </View>
+    </ScrollView>
   );
 }
 

@@ -13,5 +13,5 @@ export default function HelloWorld() {
       <Text>Try editing me! 🎉</Text>
       <Text>안녕하세요</Text>
     </View>
-  );
+  )
 }
