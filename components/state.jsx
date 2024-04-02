@@ -17,7 +17,7 @@ export default function State({name}) {
       <Button
       onPress={() => {setIsHungry(false);}} 
       disabled={!isHungry} 
-      title={isHungry ? "Pour me some milk": "Thank you"}  
+      title={isHungry ? "please me some milk": "Thank you"}  
       />
     </View>
   );
